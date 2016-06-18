@@ -3,28 +3,33 @@ html(lang="en")
   head
     title="Pat Humphreys Management Services Ltd."
     link(href='css/phms.css', rel='stylesheet')
-  body
-    nav.layout-nav
-      .Title
-        PHMS Ltd.
-      .links
-        ul
+  body#page-top
+    nav.layout-nav.layout-flex-row
+      .title
+        a(href='#page-top').
+          PHMS Ltd.
+      ul.layout-flex-row
+        a(href='#about')
           li About
+        a(href='#contact')
           li Contact
 
     .layout-container
-      .hero-unit.layout-flex
-        div.
-          picture
+      .hero-unit
+        img(src='img/pat-humphreys-phms.jpg')
 
-        h1 Pat Humphreys Management Services Ltd
+        h1.fancy-title
+          | Pat Humphreys <br> Management Services Ltd
 
         .features
-          span Business Advisor 
-          span Lean Enterpise Manager 
-          span Excellence Through Change
-      .block.layout-flex
-        h2 About
+          Business Advisor &#183; 
+          Lean Enterpise Manager &#183;  
+          Excellence Through Change
+
+      section#about
+        h2.fancy-title.
+          About
+        img(src='img/pat-humphreys-phms.jpg')
         p.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros
           quis nunc lacinia condimentum vel a arcu. Sed ullamcorper odio a arcu
@@ -35,8 +40,18 @@ html(lang="en")
           tristique leo at nulla fermentum ullamcorper. Integer neque risus,
           sollicitudin fermentum augue at, commodo accumsan libero.
 
-      .block.layout-flex
-        h2 Contact
+      section#contact
+        h2.fancy-title.
+          Contact
+        p.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros
+          quis nunc lacinia condimentum vel a arcu. Sed ullamcorper odio a arcu
+          bibendum scelerisque in non metus. Praesent imperdiet arcu ac purus
+          aliquet placerat. Integer id sodales ante, in faucibus arcu.
+          Suspendisse tincidunt consectetur elit, eget porttitor ipsum. Morbi
+          fringilla tortor rutrum orci dapibus ullamcorper at ac ex. Nunc
+          tristique leo at nulla fermentum ullamcorper. Integer neque risus,
+          sollicitudin fermentum augue at, commodo accumsan libero.
 
     footer
       div.

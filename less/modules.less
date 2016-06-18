@@ -1,0 +1,51 @@
+.hero-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 232px;
+    height: 319px;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .features {
+  }
+}
+
+nav {
+  align-items: center;
+
+  background: blue;
+  .title {
+  }
+}
+
+.fancy-title {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+
+  &::before,
+  &::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+  }
+}
+
+section {
+  h2 {
+  }
+  img {
+    float: right;
+  }
+}
