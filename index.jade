@@ -4,7 +4,7 @@ html(lang="en")
     title="Pat Humphreys Management Services Ltd."
     link(href='css/phms.css', rel='stylesheet')
   body#page-top
-    nav.layout-nav.layout-flex-row
+    nav.layout-nav.layout-flex-row.invert-colors
       .title
         a(href='#page-top').
           PHMS Ltd.
@@ -21,15 +21,15 @@ html(lang="en")
         h1.fancy-title
           | Pat Humphreys <br> Management Services Ltd
 
-        .features
+        .features.
           Business Advisor &#183; 
           Lean Enterpise Manager &#183;  
           Excellence Through Change
 
-      section#about
+      section#about.invert-colors
         h2.fancy-title.
           About
-        img(src='img/pat-humphreys-phms.jpg')
+        img(src='img/pat-humphreys-bio.jpg', width="200px")
         p.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros
           quis nunc lacinia condimentum vel a arcu. Sed ullamcorper odio a arcu
@@ -43,21 +43,25 @@ html(lang="en")
       section#contact
         h2.fancy-title.
           Contact
-        p.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros
-          quis nunc lacinia condimentum vel a arcu. Sed ullamcorper odio a arcu
-          bibendum scelerisque in non metus. Praesent imperdiet arcu ac purus
-          aliquet placerat. Integer id sodales ante, in faucibus arcu.
-          Suspendisse tincidunt consectetur elit, eget porttitor ipsum. Morbi
-          fringilla tortor rutrum orci dapibus ullamcorper at ac ex. Nunc
-          tristique leo at nulla fermentum ullamcorper. Integer neque risus,
-          sollicitudin fermentum augue at, commodo accumsan libero.
+        .layout-row-wrap-list
+          .big-link.
+            Tel. 00 353 (86) 815 5423
+          .big-link.
+            LinkedIn
+          .big-link.
+            Email
 
-    footer
-      div.
+
+    footer.invert-colors.layout-flex-column
+      p.
         Copywrite Pat Humphreys Management Services Ltd.
-      ul
-        li Mobile
-        li Vat
-        li Cro
-        li Email
+      hr
+      .layout-row-wrap-list
+        .info-item.
+          Mobile 00 353 (86) 815 5423
+        .info-item.
+          VAT Number IE9666213M
+        .info-item.
+          CRO Number 443050
+        .info-item.
+          Email pathumphreys@phms.ie

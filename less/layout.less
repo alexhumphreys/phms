@@ -15,9 +15,26 @@
 
 .layout-container {
   &:extend(.layout-flex-column);
-  margin: 5%;
 }
 
 .layout-flex {
   display: flex;
+}
+
+.layout-plain-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-row-wrap-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  div {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
 }

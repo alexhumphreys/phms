@@ -1,3 +1,5 @@
+@import "theme.less";
+
 .hero-unit {
   display: flex;
   flex-direction: column;
@@ -18,8 +20,30 @@
 nav {
   align-items: center;
 
-  background: blue;
   .title {
+  }
+}
+
+.big-link {
+  display: flex;
+  justify-content: center;
+
+  min-width: 150px;
+  margin: 5px;
+  background: @light-blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  div {
+    flex-grow: 1;
+    flex-basis: 0;
   }
 }
 
@@ -27,11 +51,12 @@ nav {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: rgba(0, 0, 0, 0.35);
+
   margin: 8px 0px;
 
   &::before,
   &::after {
+    color: rgba(0, 0, 0, 0.35);
     content: "";
     flex-grow: 1;
     background: rgba(0, 0, 0, 0.35);
@@ -42,10 +67,11 @@ nav {
   }
 }
 
-section {
-  h2 {
-  }
-  img {
-    float: right;
+footer {
+  display: flex;
+  align-items: center;
+
+  .info-item {
+    margin: 5px;
   }
 }

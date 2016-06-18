@@ -1,5 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+section,
+body,
+ul,
+li {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+.invert-colors {
+  background: #2d83b5;
+}
+.invert-colors h1,
+.invert-colors h2,
+.invert-colors h3,
+.invert-colors h4,
+.invert-colors h5,
+.invert-colors h6,
+.invert-colors p,
+.invert-colors div,
+.invert-colors span,
+.invert-colors section,
+.invert-colors body,
+.invert-colors ul,
+.invert-colors li {
+  color: white;
+}
 body {
   margin: 0%;
+}
+section {
+  margin-top: 5%;
+  padding: 5%;
+}
+section img {
+  float: right;
+}
+hr {
+  width: 100%;
+}
+footer {
+  margin-top: 5%;
+  padding: 5%;
 }
 .layout-nav {
   top: 0;
@@ -14,11 +62,23 @@ body {
   display: flex;
   flex-direction: row;
 }
-.layout-container {
-  margin: 5%;
-}
 .layout-flex {
   display: flex;
+}
+.layout-plain-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.layout-row-wrap-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-row-wrap-list div {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .hero-unit {
   display: flex;
@@ -35,17 +95,35 @@ body {
 }
 nav {
   align-items: center;
-  background: blue;
+}
+.big-link {
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
+  margin: 5px;
+  background: #7ac5f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.contact-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact-boxes div {
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .fancy-title {
   display: flex;
   flex-basis: 100%;
   align-items: center;
-  color: rgba(0, 0, 0, 0.35);
   margin: 8px 0px;
 }
 .fancy-title::before,
 .fancy-title::after {
+  color: rgba(0, 0, 0, 0.35);
   content: "";
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.35);
@@ -54,6 +132,10 @@ nav {
   line-height: 0px;
   margin: 0px 8px;
 }
-section img {
-  float: right;
+footer {
+  display: flex;
+  align-items: center;
+}
+footer .info-item {
+  margin: 5px;
 }
