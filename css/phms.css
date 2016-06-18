@@ -1,0 +1,10 @@
+.layout-nav {
+  top: 0;
+}
+.layout-container {
+  display: flex;
+  margin: 5%;
+}
+.layout-flex {
+  display: flex;
+}
