@@ -16,13 +16,15 @@ html(lang="en")
 
     .layout-container
       .hero-unit
-        img(src='img/pat-humphreys-phms.jpg')
+        .image-wrapper
+          img(src='img/pat-humphreys-phms.jpg')
 
-        h1.fancy-title
-          | Pat Humphreys <br> Management Services Ltd
+        .title-wrapper
+          h1.fancy-title
+            | Pat Humphreys <br> Management Services Ltd
 
-        .skills.btn-link.navy.
-          Business Advisor - Lean Enterprise Manager - Excellence Through Change
+        .skills.btn-link.blue.
+          Business Advisor - Lean Enterprise Manager - Excellence Through People
 
       section#about.invert-colors
         h2.fancy-title.
@@ -45,9 +47,9 @@ html(lang="en")
           22 years with the family owned multinational corporation Bourns
           Electronics. He understands the dynamics international business and
           the competitive challenges faced today by business leaders. He is an
-          approved ‘Excellence Through People' Advisor and has carried out many
-          mentoring assignments on behalf of Cork City and County Local
-          Enterprise Offices and 'Enterprise Ireland' board. 
+          approved 'Excellence Through People' Advisor and has carried out many
+          mentoring assignments on behalf of Cork City & County Local
+          Enterprise Offices and Enterprise Ireland.
         p.
           Pat's academic achievements include an MSc in Lean Six-Sigma Quality
           Management from the University of Limerick.  Pat is known to be an
@@ -71,15 +73,16 @@ html(lang="en")
 
 
     footer.invert-colors.layout-flex-column
-      p.
-        Copywrite Pat Humphreys Management Services Ltd.
+      p
+        | Copywrite Pat Humphreys Management Services Ltd. <script>document.write(new Date().getFullYear())</script>
       hr
       .layout-row-wrap-list
-        .info-item.
-          Mobile 00 353 (86) 815 5423
-        .info-item.
-          VAT Number IE9666213M
-        .info-item.
-          CRO Number 443050
-        .info-item.
-          Email pathumphreys@phms.ie
+        .info-item
+          | Mobile <br> 00 353 (86) 815 5423
+        .info-item
+          | Email <br> pathumphreys@phms.ie
+      .layout-row-wrap-list
+        .info-item
+          | CRO Number <br> 443050
+        .info-item
+          | VAT Number <br> IE9666213M

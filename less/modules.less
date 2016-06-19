@@ -14,7 +14,15 @@
     width: 232px;
     height: 319px;
   }
+  .title-wrapper {
+    width: 100%;
+  }
+  .image-wrapper {
+    margin: 0;
+  }
+
   h1 {
+    min-height: 100px;
     width: 100%;
     text-align: center;
   }
@@ -22,17 +30,12 @@
     font-size: 1.4em;
     text-align: center;
   }
-
-  .features {
-    font-size: 1.4em;
-    white-space: nowrap;
-    text-align: center;
-  }
 }
 
 nav {
   height: 60px;
   align-items: center;
+  background: @gray !important;
 
   .title {
     font-size: 1.2em;
@@ -82,7 +85,7 @@ nav {
 
   &::before,
   &::after {
-    background: @navy;
+    background: @blue;
     content: "";
     flex-grow: 1;
     height: 1px;
@@ -95,6 +98,11 @@ nav {
 footer {
   display: flex;
   align-items: center;
+  background: @gray !important;
 
   text-align: center;
+
+  .info-item {
+    min-width: 200px;
+  }
 }
