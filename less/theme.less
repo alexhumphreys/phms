@@ -1,16 +1,65 @@
-@light-blue: #7ac5f1;
-@blue: #2d83b5;
-@navy: #2c3e50;
+@light-blue: #7AC5F1;
+@blue: #2D83B5;
+@navy: #2C3E50;
+@white: #F4F5F5;
+@line-color: @navy;
+@orange: #FFA434;
+@dark-orange: #FF8D01;
+@light-orange: #FFB55A;
 
-h1, h2, h3, h4, h5, h6, p, div, span, section, body, ul, li {
+h1, h2, h3, h4, h5, h6, p, div, span, section, body, ul, li, a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: @navy;
 }
 
 .invert-colors {
   background: @blue;
-  h1, h2, h3, h4, h5, h6, p, div, span, section, body, ul, li {
-    color: white;
+  h1, h2, h3, h4, h5, h6, p, div, span, section, body, ul, li, a {
+    color: @white;
+  }
+
+  .fancy-title {
+    &::before,
+    &::after {
+      background: @white;
+    }
+  }
+
+  .btn-link {
+    color: @blue;
   }
 }
 
+body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+.orange {
+  background: @orange !important;
+  border-color: @light-orange !important;
+  color: white !important;
+}
+
+.blue {
+  background: @blue !important;
+  border-color: @blue !important;
+  color: white !important;
+}
+
+.navy {
+  background: @navy !important;
+  border-color: @navy !important;
+  color: white !important;
+}
