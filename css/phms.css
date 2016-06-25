@@ -114,8 +114,7 @@ footer {
   justify-content: space-between;
 }
 .layout-row-wrap-list * {
-  flex-grow: 1;
-  flex-basis: 0;
+  flex: 1 0 auto;
   margin: 10px;
 }
 .hero-unit {
