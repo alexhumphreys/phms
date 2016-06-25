@@ -15,3 +15,10 @@ jade --watch index.jade
 ```
 ./less-watcher.sh
 ```
+
+### Deploy
+
+```
+. ftp-env.sh
+./deploy.sh
+```
