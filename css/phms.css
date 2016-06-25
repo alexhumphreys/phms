@@ -123,8 +123,8 @@ footer {
   align-items: center;
 }
 .hero-unit * {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .hero-unit img {
   width: 232px;
